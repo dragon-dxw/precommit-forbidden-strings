@@ -1,0 +1,32 @@
+[project]
+name = "precommit-forbidden-words"
+description = "Find forbidden words in precommit"
+version = "0.1.0"
+authors = [
+    { name = "'Dragon' Dave McKee", email = "dave.mckee@dxw.com" }
+]
+dependencies = [
+    # "pyspark[ml]",
+    # "sklearn"
+]
+
+[project.optional-dependencies]
+dev = [
+    # "tox",
+    # "pre-commit",
+    # "bump2version"
+]
+
+[tool.poetry]
+name = "forbidden"
+description = "forbidden words precommit hook"
+authors = ["David McKee <dave.mckee@dxw.com>"]
+version = "0.1.0"
+packages = [{include = "forbidden"}]
+
+[tool.poetry.scripts]
+forbidden = "forbidden.forbidden:start"
+
+[build-system]
+requires = ["poetry_core>=0.0.0"]
+build-backend = "poetry.core.masonry.api"
