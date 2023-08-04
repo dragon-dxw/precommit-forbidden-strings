@@ -21,6 +21,7 @@ Then run `pre-commit autoupdate` to update and `pre-commit init` to install.
 
 `script/demo` runs the local version, rather than the version installed on github.
 If the environment variable `DEBUG` is set, additional diagnostic information will be printed and it will always fail (so you can read the messages.)
+We run `launcher forbidden-strings.txt file1 file2 file3...`, but that might change later.
 
 # The Future
 
