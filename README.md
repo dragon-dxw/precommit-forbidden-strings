@@ -25,5 +25,5 @@ We run `launcher forbidden-strings.txt file1 file2 file3...`, but that might cha
 
 # The Future
 
-* Regex support
+* Toggle between regex and text on a per line basis.
 * Turn things off with comments

@@ -1,19 +1,25 @@
 import sys
 import os
-
+import re
 DEBUG = os.environ.get("DEBUG")
 
 def debug(*args):
   if DEBUG: print(*args)
 
-def is_file_ok(checked_filename, forbidden_words):
+def text_matcher(word, line):
+  return forbidden_word in line
+
+def regex_matcher(word, line):
+  return re.search(word, line)
+
+def is_file_ok(checked_filename, forbidden_words, matcher=regex_matcher):
   """Does this single file contain no forbidden words?"""
   ok = True
   with open(checked_filename, "r") as f:
     file_contents = f.readlines()
   for line_num, line_text in enumerate(file_contents):
     for forbidden_word in forbidden_words:
-      if forbidden_word in line_text:
+      if matcher(forbidden_word, line_text):
         print(f"forbidden word '{forbidden_word}' found in {checked_filename} on line {line_num+1}")
         print(line_text)
         print()
