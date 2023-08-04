@@ -16,5 +16,8 @@ def start():
           print(f"forbidden word '{forbidden_word}' found in {checked_filename} on line {line+1}")
           fail = 1
   exit(fail)
+  exit(1)
 if __name__ == "__main__":
   start()
+
+# judgement
