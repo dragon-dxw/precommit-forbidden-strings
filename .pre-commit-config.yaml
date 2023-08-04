@@ -3,4 +3,3 @@ repos:
     rev: "aeac9799c5e88c8bb11de6f89d366df3da14cc37"
     hooks:
       - id: forbidden
-        args: ["forbidden-words.txt"]

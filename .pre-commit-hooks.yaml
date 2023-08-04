@@ -1,8 +1,8 @@
 - id: forbidden
   name: forbidden
   description: "Forbidden words"
-  entry: forbidden
+  entry: forbidden forbidden-words.txt
   language: python
   minimum_pre_commit_version: 2.9.2
   require_serial: true
-  types_or: [python]
+  types_or: [text]

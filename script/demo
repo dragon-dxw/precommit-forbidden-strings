@@ -1,0 +1,1 @@
+pre-commit try-repo . forbidden --all
