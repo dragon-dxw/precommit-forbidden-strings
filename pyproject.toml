@@ -25,7 +25,7 @@ version = "0.1.0"
 packages = [{include = "forbidden"}]
 
 [tool.poetry.scripts]
-forbidden = "forbidden.forbidden:start"
+forbidden = "forbidden.launcher:start"
 
 [build-system]
 requires = ["poetry_core>=0.0.0"]
