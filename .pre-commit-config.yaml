@@ -1,5 +1,5 @@
 repos:
   - repo: https://github.com/dragon-dxw/precommit-forbidden-strings
-    rev: "3fe93fe"
+    rev: "v0.1.0"
     hooks:
       - id: forbidden
